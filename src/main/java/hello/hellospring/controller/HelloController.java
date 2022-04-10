@@ -19,6 +19,7 @@ public class HelloController {
         return "hello-templates";
     }
 
+
     @GetMapping("hello hansol")
     public String helloH(@RequestParam("who") String name, Model model){
         model.addAttribute("who", name);
